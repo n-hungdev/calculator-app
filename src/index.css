@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+/* CSS RESET */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	outline: none;
+	border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+/* CSS BASE */
+/* Variable */
+:root {
+	--body-bg: #edf6f9;
+	--txt-color: #6d6d6d;
+	--txt-white: #fff;
+	--calc-res-color: #2f2d2f;
+	--calc-btn-color: #d400ff;
+	--calc-bg: #fff;
+	--calc-bg-btn: #161a1d;
+}
+/* Dark theme */
+.dark {
+	--calc-res-color: #fff;
+	--calc-bg: #373737;
+	--calc-bg-btn: #f1faee;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+
+	background-color: var(--body-bg);
+	color: var(--txt-color);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+	cursor: pointer;
+}
+
+.warpper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+@media screen and (max-width: 374.98px) {
+	body {
+		display: block;
+		padding-top: 0;
+	}
+}
